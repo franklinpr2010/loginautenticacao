@@ -59,6 +59,39 @@ Acessar o runserver: python manage.py runserver
 
 
 
+Aqui são as rotas do admin:
+
+
+>python manage.py shell
+Python 3.7.6 (tags/v3.7.6:43364a7ae0, Dec 19 2019, 01:54:44) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from django.urls import get_resolver
+>>> from pprint import pprint
+>>> ppprint(get_resolver().url_patterns[0].url_patterns)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'ppprint' is not defined
+>>> pprint(get_resolver().url_patterns[0].url_patterns)
+[<URLPattern '' [name='index']>,
+ <URLPattern 'login/' [name='login']>,
+ <URLPattern 'logout/' [name='logout']>,
+ <URLPattern 'password_change/' [name='password_change']>,
+ <URLPattern 'password_change/done/' [name='password_change_done']>,
+ <URLPattern 'jsi18n/' [name='jsi18n']>,
+ <URLPattern 'r/<int:content_type_id>/<path:object_id>/' [name='view_on_site']>,
+ <URLResolver <URLPattern list> (None:None) 'auth/group/'>,
+ <URLResolver <URLPattern list> (None:None) 'usuarios/customusuario/'>,
+ <URLPattern '^(?P<app_label>auth|usuarios)/$' [name='app_list']>]
+     
+ 
+ 
+     
+  
+ 
+
+
+
 
 
 
