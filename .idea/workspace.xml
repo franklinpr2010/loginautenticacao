@@ -4,6 +4,7 @@
     <list default="true" id="52ab7a19-6a9c-4594-93e8-42beab1926db" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/loginautenticacao/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/loginautenticacao/asgi.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/loginautenticacao/settings.py" afterDir="false" />
@@ -14,6 +15,7 @@
       <change afterPath="$PROJECT_DIR$/usuarios/admin.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/usuarios/apps.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/usuarios/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usuarios/migrations/0001_initial.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/usuarios/migrations/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/usuarios/models.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/usuarios/tests.py" afterDir="false" />
