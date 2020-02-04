@@ -84,6 +84,24 @@ NameError: name 'ppprint' is not defined
  <URLResolver <URLPattern list> (None:None) 'usuarios/customusuario/'>,
  <URLPattern '^(?P<app_label>auth|usuarios)/$' [name='app_list']>]
      
+     
+Criar as paginas base.html, index.html e login.html  
+ 
+No settings.py, quando der logout redirecionar para o index  
+ 
+LOGIN_REDIRECT_URL = 'index'
+LOGOUT_REDIRECT_URL = 'index'
+
+Em urls.py  
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('contas/', include('django.contrib.auth.urls')),
+    #vai para a pagina index
+    path('', TemplateView.as_view(template_name='index.html'), name='index'),
+]
+
+     
  
  
      
