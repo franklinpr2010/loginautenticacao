@@ -21,6 +21,33 @@ Rodar o comando migrate = python manage.py migrate para criar as tabelas
 Rodar o comando create super user = python manage.py createsuperuser, para criar as tabelas, vai aparecer exatmente como colocou no model.
 
 
+**Conhecendo o model admin**
+
+python manage.py shell
+
+Executar o comando para importar o model User( Modelo de dados de autenticação do django ):  
+from django.contrib.auth.models import User
+help(User)
+
+UserManager é o gerenciador de usuário (Salva e cria o usuário):  
+from django.contrib.auth.models import User
+help(UserManager)
+help(UserManager.create)
+
+Criar um usuario e salvar no banco:
+
+usuario = User.objects.create_user(username='teste', password='123456', email='franklinpr2010@gmail.com')  
+usuario.save()  
+
+Traz todos os Usuarios do banco:  
+ret = User.objects.all()  
+ret  
+ret[0].username  
+
+
+**********************************************************************************************************
+
+
 Alterar o admin.py
 
 
@@ -102,9 +129,9 @@ urlpatterns = [
 ]
 
      
+ **********************************************************************************************************
  
- 
-     
+
   
  
 
